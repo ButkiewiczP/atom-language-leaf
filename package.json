@@ -1,0 +1,20 @@
+{
+  "name": "language-leaf",
+  "version": "0.0.1",
+  "description": "Leaf language support in Atom",
+  "engines": {
+    "atom": "*"
+  },
+  "homepage": "http://github.com/ButkiewiczP/atom-language-leaf",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/ButkiewiczP/atom-language-leaf"
+  },
+  "bugs": {
+    "url": "https://github.com/ButkiewiczP/atom-language-leaf/issues"
+  },
+  "devDependencies": {
+    "coffeelint": "^1.10.1"
+  },
+  "license": "MIT"
+}

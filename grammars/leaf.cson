@@ -1,0 +1,45 @@
+'scopeName': 'text.html.leaf'
+'name': 'HTML (Leaf)'
+'fileTypes': [
+  'leaf'
+  'lf'
+  'lef'
+]
+'patterns': [
+  {
+    'include': '#variable'
+  }
+  {
+    'include': '#tag'
+  }
+  {
+    'include': 'text.html.basic'
+  }
+]
+'repository':
+  'tag':
+    'match': '(#{1,2})(\\w*)?(\\({1,})([^)]*)(\\){1,})\\s*',
+    'captures':
+      '1':
+        'name': 'keyword.control.leaf'
+      '2':
+        'name': 'entity.name.tag.leaf'
+      '3':
+        'name': 'constant.other.begin.leaf'
+      '4':
+        'name': 'string.quoted.double.html'
+      '5':
+        'name': 'constant.other.end.leaf'
+    'name': 'meta.tag.leaf'
+  'variable':
+    'match': '(#{1,2})(\\({1,})([^)]*)(\\))',
+    'captures':
+      '1':
+        'name': 'keyword.control.leaf'
+      '2':
+        'name': 'constant.other.begin.leaf'
+      '3':
+        'name': 'string.quoted.double.html',
+      '4':
+        'name': 'constant.other.end.leaf'
+    'name': 'meta.variable.leaf'
